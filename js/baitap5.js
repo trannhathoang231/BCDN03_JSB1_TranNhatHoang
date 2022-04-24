@@ -18,16 +18,31 @@
  */
 
 // B1:
-var num = 12;
-var numHangDv = 0;
-var numHangChuc = 0;
+// var num = 12;
+// var numHangDv = 0;
+// var numHangChuc = 0;
 
-// B2: 
-numHangDv = num % 10;
+// // B2: 
+// numHangDv = num % 10;
 
-numHangChuc = Math.floor(num/10);
+// numHangChuc = Math.floor(num/10);
 
-tong = numHangDv + numHangChuc;
+// tong = numHangDv + numHangChuc;
 
-// B3:
-console.log("Tổng 2 ký số của số vừa nhập là: " +tong);
+// // B3:
+// console.log("Tổng 2 ký số của số vừa nhập là: " +tong);
+
+
+//JS2_3
+
+function tinhTongKySo() {
+    var num = document.getElementById("soHaiChuSo").value;
+    var numHangDv = num % 10;
+    var numHangChuc = Math.floor(num/10);
+
+
+    var tong = numHangDv + numHangChuc;
+
+
+    document.getElementById("thongBaoTongKySo").innerHTML = tong;
+}

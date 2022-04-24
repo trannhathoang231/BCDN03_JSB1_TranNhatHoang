@@ -16,13 +16,28 @@
  */
 
 // B1
-var luong1Ngay = 100000;
-var soNgayLam = 5;
-var tongLuong = 0;
+// var luong1Ngay = 100000;
+// var soNgayLam = 5;
+// var tongLuong = 0;
 
-// B2:
-tongLuong = luong1Ngay * soNgayLam
+// // B2:
+// tongLuong = luong1Ngay * soNgayLam
 
-//B3:
-// toLocaleString: hiển thị dấu chia phần ngàn cho number
-console.log("Tổng lương: " + tongLuong.toLocaleString() + " VNĐ")
+// //B3:
+// // toLocaleString: hiển thị dấu chia phần ngàn cho number
+// console.log("Tổng lương: " + tongLuong.toLocaleString() + " VNĐ")
+
+
+//Js2-3
+
+
+function tinhLuong() {
+    var luong1Ngay = document.getElementById("luongngay").value;
+    var soNgayLam = document.getElementById("days").value;
+
+
+    var tongLuong = luong1Ngay * soNgayLam;
+
+
+    document.getElementById("thongBaoTien").innerHTML = tongLuong;
+}

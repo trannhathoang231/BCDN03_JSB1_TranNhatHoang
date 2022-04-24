@@ -15,13 +15,24 @@
  */
 
 // B1:
-var giaUsd = 23500;
-var soTienUsd = 2;
-var soTienVnd = 0;
+// var giaUsd = 23500;
+// var soTienUsd = 2;
+// var soTienVnd = 0;
 
-// B2:
-soTienVnd = giaUsd * soTienUsd; 
+// // B2:
+// soTienVnd = giaUsd * soTienUsd; 
 
-// B3: 
+// // B3: 
 
-console.log("Số tiền sau quy đổi VND: " + soTienVnd);
+// console.log("Số tiền sau quy đổi VND: " + soTienVnd);
+
+//js2_3
+
+function tinhTienVND() {
+    var soTienUsd = document.getElementById("soTienUSD").value;
+    var giaUsd = 23500;
+
+    var soTienVnd = soTienUsd * giaUsd;
+
+    document.getElementById("thongBaoTienVND").innerHTML = new Intl.NumberFormat('vn-VN').format(soTienVnd);
+}

@@ -17,15 +17,28 @@
  */
 
 // B1:
-var chieuDai = 3;
-var chieuRong = 2;
-var dienTich = 0;
-var chuVi = 0;
+// var chieuDai = 3;
+// var chieuRong = 2;
+// var dienTich = 0;
+// var chuVi = 0;
 
-// B2:
-dienTich = chieuDai * chieuRong;
-chuVi = (chieuDai + chieuRong) *2;
+// // B2:
+// dienTich = chieuDai * chieuRong;
+// chuVi = (chieuDai + chieuRong) *2;
 
-// B3:
-console.log("Diện tích của hình chữ nhật là " + dienTich);
-console.log("Chu vi của hình chữ nhật là " + chuVi);
+// // B3:
+// console.log("Diện tích của hình chữ nhật là " + dienTich);
+// console.log("Chu vi của hình chữ nhật là " + chuVi);
+
+
+//js2_3
+
+function tinhKichThuoc() {
+    var chieuDai = document.getElementById("chieuDai").value;
+    var chieuRong = document.getElementById("chieuRong").value;
+
+    var dienTich = chieuDai * chieuRong;
+    var chuVi = (Number(chieuDai) + Number(chieuRong)) * 2;
+
+    document.getElementById("thongBaoKichThuoc").innerHTML = "Diện tích: "+dienTich + "; " +"Chu vi: "+chuVi;
+}
